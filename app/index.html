@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, a platinum roadmap, missable flags, and cited guides.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">VI</span>
+      <div>
+        <h1>Leonida Trophy Guide</h1>
+        <p class="subtitle">Grand Theft Auto VI &middot; all 55 PlayStation 5 trophies &middot; unofficial fan guide</p>
+      </div>
+    </div>
+    <div class="progress-wrap" id="progress-wrap">
+      <div class="progress-numbers"><strong id="progress-count">0 of 55</strong><span id="progress-pct">0%</span></div>
+      <div class="progress-bar" role="progressbar" aria-label="Trophies earned"><div class="progress-fill" id="progress-fill"></div></div>
+      <p class="grade-counts" id="grade-counts"></p>
+    </div>
+  </div>
+  <p class="hidden-note">28 of the 55 trophies are hidden on PlayStation until earned. This guide lists them all — turn Spoilers on to hide story trophies until you earn them.</p>
+</header>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button type="button" class="tab active" data-tab="checklist">Checklist</button>
+  <button type="button" class="tab" data-tab="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-tab="about">Sources &amp; method</button>
+</nav>
+
+<section class="toolbar" id="toolbar" aria-label="Filters and progress tools">
+  <input id="search" type="search" placeholder="Search a trophy, mission or keyword…" aria-label="Search trophies">
+  <select id="grade-filter" aria-label="Filter by grade">
+    <option value="all">All grades</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select>
+  <div class="chips" id="kind-chips" role="group" aria-label="Filter by kind"></div>
+  <label class="switch"><input type="checkbox" id="spoiler-toggle"> <span>Hide story spoilers</span></label>
+  <label class="switch"><input type="checkbox" id="hide-earned-toggle"> <span>Hide earned</span></label>
+  <button type="button" id="export-btn">Export progress</button>
+  <label class="import-btn">Import progress <input id="import-input" type="file" accept="application/json,.json"></label>
+  <button type="button" id="reset-btn" class="danger">Reset</button>
+</section>
+
+<main>
+  <section id="view-checklist" class="view">
+    <p class="online-note">Online: none — all 55 trophies are single-player. There are no online trophies in the official list.</p>
+    <p class="result-count" id="result-count"></p>
+    <div class="checklist-layout">
+      <ul class="trophy-list" id="trophy-list"></ul>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view hidden">
+    <p class="roadmap-intro">Earn the trophies in this order. Stage 1 is the story — do every missable trophy there before the final mission, because story moments do not come back. Stages 2–4 are free-roam work you can do in any order, and Stage 5 is the endgame cleanup that ends with the platinum.</p>
+    <div class="stages" id="stages"></div>
+  </section>
+
+  <section id="view-about" class="view hidden">
+    <h2>Sources &amp; method</h2>
+    <p>Every trophy name, description and grade in this guide is shown exactly as PlayStation publishes it, from the official 55-trophy list for Grand Theft Auto VI on PlayStation 5 (list dated 2026-11-18). The counts PlayStation tracks — such as 42 Shooting Range challenges, 14 Top Fun drone race locations, 18 meditation spots, 52 areas of Leonida, 9 gangs and 8 garage properties — come from the same listing.</p>
+    <p>Each guide is written in this guide&rsquo;s own words. It draws on the official descriptions and on the trophy listings of Exophase and PSNProfiles, which agree on every name, description and grade, and it names those sources beside every trophy. No guide text is copied from another guide, wiki, video or forum post.</p>
+    <p>Missable flags and the roadmap stages are built from the official descriptions: trophies tied to a story chapter or a named mission, and trophies tied to a one-shot moment (a partner robbery, an undetected theft, a choice), are flagged missable and placed in Stage 1. Everything else can be earned in free roam.</p>
+    <p>This is an unofficial fan guide. It is not affiliated with Rockstar Games or PlayStation, and it uses no Rockstar logo, artwork or screenshots. Your checklist is saved only in this browser (localStorage); export it to a file to keep a backup, and import it back on any machine.</p>
+    <h3>Sources</h3>
+    <ul>
+      <li>PlayStation official trophy description — Grand Theft Auto VI, PS5 trophy list</li>
+      <li>Exophase — Grand Theft Auto VI trophy list</li>
+      <li>PSNProfiles — Grand Theft Auto VI trophy list</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an unofficial fan guide to the 55 GTA VI trophies. Not affiliated with Rockstar Games or PlayStation. Works offline; nothing leaves this browser.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
